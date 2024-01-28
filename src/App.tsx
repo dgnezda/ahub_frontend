@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import { WebSocketProvider, socket } from './contexts/WebsocketContext'
 import { Websocket } from './components/Websocket'
 

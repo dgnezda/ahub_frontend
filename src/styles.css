@@ -1,0 +1,289 @@
+:root {
+    --yellow-default: #F4FF47;
+    --yellow-hover: #D0DB33;
+    --yellow-press: #ACB723;
+    --yellow-light: #F9FF90;
+    --gray-default: #EDF4F2;
+    --gray-hover: #DDE9E6;
+    --gray-press: #B0BFBD;
+    --text-primary: #071015;
+    --text-tertiary: #74817F;
+    --black-default: #272D2D;
+    --black-hover: #1C2526;
+    --black-press: #131E20;
+    --gray-bg: #F6F6F4;
+    --red: #FFAA98;
+    /* --blue: #0A97FC;
+    --orange: #FFD11C; */
+    --green: #ADFF90;
+}
+
+* {
+    font-size: 16px;
+    background-color: var(--gray-bg);
+}
+
+/* ~~BASE COMPONENTS~~ */
+
+/* Button */
+
+.button {
+    line-height: 24px;
+    display: inline-flex;
+    min-height: 40px;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+}
+
+.cta-button {
+    display: inline-flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 32px;
+}
+
+.primary {
+    background: var(--yellow-default);
+    color: var(--text-primary);
+}
+
+.primary:hover {
+    background: var(--yellow-hover);
+    transition: all 0.3s ease-in;
+}
+
+.primary:active {
+    background: var(--yellow-press);
+    transition: all 0.3s ease-in;
+}
+
+.secondary {
+    background: var(--black-default);
+    color: #FFF;
+}
+
+.secondary:hover {
+    background: var(--black-hover);
+    transition: all 0.3s ease-in;
+}
+
+.secondary:active {
+    background: var(--black-press);
+    transition: all 0.3s ease-in;
+}
+
+.tertiary {
+    border: 1px solid var(--black-default);
+    color: var(--text-primary);
+}
+
+.tertiary:hover {
+    border: none;
+    background: var(--black-hover);
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+.tertiary:active {
+    border: none;
+    background: var(--black-press);
+    transition: all 0.3s ease-in;
+}
+
+.alternative {
+    background: var(--gray-default);
+    color: var(--text-primary);
+}
+
+.alternative:hover {
+    background: var(--gray-hover);
+    transition: all 0.3s ease-in;
+}
+
+.alternative:active {
+    background: var(--gray-press);
+    transition: all 0.3s ease-in;
+}
+
+/* Avatar */
+
+.avatar-l {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.avatar-m {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.avatar-s {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+/* Tags */
+
+.tag-l {
+    display: inline-flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+}
+
+.tag-s {
+    display: inline-flex;
+    padding: 2px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+
+.outbid {
+    background: var(--red);
+    color: var(--text-primary);
+}
+
+.winning {
+    background: var(--green);
+    color: var(--text-primary);
+}
+
+.in-progress {
+    background: var(--yellow-light);
+    color: var(--text-primary);
+}
+
+.done {
+    background: var(--black-default);
+    color: #fff;
+}
+
+.time-tag-l {
+    display: inline-flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 16px;
+}
+
+.time-tag-s {
+    display: inline-flex;
+    padding: 2px 4px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+}
+
+.last24h {
+    background: var(--red);
+}
+
+/* Input */
+
+.input {
+    display: flex;
+    min-height: 40px;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid var(--gray-hover);
+    background: #fff;
+}
+
+.input:hover {
+    border: 1px solid var(--gray-press);
+    transition: all 0.3s ease-in;
+}
+
+.input:active {
+    border: 1px solid var(--yellow-default);
+    transition: all 0.3s ease-in;
+    color: var(--black-default); 
+    /* FIXME: DONT FORGET TO CHECK/CHANGE PLACEHOLDER TEXT COLOR, THEN WHEN FILLED TO BOLD! */
+}
+
+/* Navigation */
+
+.nav-r {
+    display: inline-flex;
+    height: 64px;
+    padding: 4px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: #FFF;
+}
+
+.nav-l {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 100px;
+    background: var(--yellow-default);
+}
+
+.nav-tab {
+    display: inline-flex;
+    height: 64px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #FFF;
+}
+
+.nav-tab-active {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 32px;
+    background: var(--black-default);
+}
+
+.nav-tab-non-active {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 32px;
+}
+
+/* Tab */
+
+.tab {
+    display: inline-flex;
+    padding: 4px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 16px;
+    background: var(--gray-default);
+}
